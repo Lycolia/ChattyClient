@@ -1,0 +1,21 @@
+%chat-message {
+  box-sizing: content-box;
+  padding: 5px;
+  margin-bottom: 5px;
+  min-height: 50px;
+  width: 290px;
+}
+
+.chat-message-left {
+  @extend %chat-message;
+  align-self: flex-start;
+  border-radius: 15px 15px 15px 0px;
+  background-color: cadetblue;
+}
+
+.chat-message-right {
+  @extend %chat-message;
+  align-self: flex-end;
+  border-radius: 15px 15px 0px 15px;
+  background-color: coral;
+}

@@ -1,0 +1,14 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 80vh;
+  width: 620px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: scroll;
+}
