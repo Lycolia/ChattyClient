@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import uuid from 'uuid';
 import { useHistory } from 'react-router-dom';
 
 const useUsername = (initVal: string) => {
@@ -31,10 +30,10 @@ const useRoomname = (initVal: string) => {
 };
 
 const createUserId = () => {
-  let userId = localStorage.getItem('userId');
-  if (!userId) {
-    userId = uuid.v5(Date.now().toString(), 'chatty');
-  }
+  // let userId = localStorage.getItem('userId');
+  // if (!userId) {
+  //   userId = uuid.v5(Date.now().toString(), 'chatty');
+  // }
 };
 
 export const Entrance = () => {

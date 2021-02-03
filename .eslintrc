@@ -12,7 +12,7 @@
   ],
   "plugins": ["@typescript-eslint"],
   "parserOptions": {
-    "project": "./tsconfig.eslint.json"
+    "project": "./tsconfig.json"
   },
   "rules": {
     // Allow non-explicit return types on functions and class methods
