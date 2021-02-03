@@ -3,7 +3,7 @@ import { Link, useRouteMatch, useLocation } from 'react-router-dom';
 import { MessageInput } from 'src/components/Chat/MessageInput';
 import { MessageItem } from 'src/components/Chat/MessageItem';
 import { ChatMessage } from 'src/types/ChatMessage';
-import './Room.scss';
+import styles from './Room.module.scss';
 
 export const useMessages = (locationState: string) => {
   const [messages, setMessages] = useState<Array<ChatMessage>>([]);
@@ -34,9 +34,9 @@ export const Room = () => {
 
   return (
     <React.Fragment>
-      <div className="main-container">
+      <div className={styles.main_container}>
         <h2>{match.params.roomName}</h2>
-        <div className="chat-container">
+        <div className={styles.chat_container}>
           {messages.value.map((message, index) => {
             return <MessageItem key={index} {...message}></MessageItem>;
           })}
