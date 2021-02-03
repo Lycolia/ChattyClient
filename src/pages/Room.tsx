@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useRouteMatch, useLocation } from 'react-router-dom';
 import { MessageInput } from 'src/components/Chat/MessageInput';
 import { MessageItem } from 'src/components/Chat/MessageItem';
