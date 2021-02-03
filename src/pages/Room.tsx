@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { Link, useRouteMatch, useLocation } from 'react-router-dom';
 import { MessageInput } from 'src/components/Chat/MessageInput';
