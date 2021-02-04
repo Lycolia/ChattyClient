@@ -15,7 +15,18 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    // Prevent missing React when using JSX
     "react/react-in-jsx-scope": "off",
+    // Validate spacing before closing bracket in JSX
+    "react/jsx-space-before-closing": ["warn", "always"],
+    // Prevent extra closing tags for components without children
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
     // Allow non-explicit return types on functions and class methods
     "@typescript-eslint/explicit-function-return-type": "off",
     // Allow non-explicit return types on exported functions
